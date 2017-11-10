@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+<style>
+ a{
+    color: blue;
+     text-decoration: none;
+ }
+    #inputValue{
+        padding-left: 10px;
+        margin-left: 5px;
+        border: 1px solid black;
+        height: 30px;
+    }
+    button{
+        border: 1px solid black;
+        color: white;
+        background-color: green;
+        outline: none;
+        width: 70px;
+        height: 30px;
+    }
+    .addOrEdit{
+        width: 70%;
+        border: 1px solid grey;
+        margin: 50px auto;
+        padding: 10px;
+    }
+
+</style>
+<table id="table" border="1" cellspacing="0">
+    <tbody>
+        <tr>
+            <td>Item name</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>some item</td>
+            <td><a href="" class="edit">edit</a></td>
+            <td><a href="" class="remove">remove</a></td>
+        </tr>
+        <tr>
+            <td cellpadding="10">another item</td>
+            <td><a href="" class="edit">edit</a></td>
+            <td><a href="" class="remove">remove</a></td>
+        </tr>
+    </tbody>
+</table>
+
+    <div class="addOrEdit">
+            <span>Item value:</span><input type="text" name="inputValue" id="inputValue" placeholder="Enter some text...">
+            <div>
+                <button onclick="addRow()">Save</button>
+                <a href="">&lt;&lt;Go back</a>
+            </div>
+    </div>
+</body>
+</html>
