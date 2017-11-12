@@ -6,13 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type="text/javascript" src="./script.js" defer></script>
+    <script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
 <style>
- a{
+ span, a{
     color: blue;
-     text-decoration: none;
+     text-decoration: underline;
  }
     #inputValue{
         padding-left: 10px;
@@ -44,18 +44,18 @@
         </tr>
         <tr>
             <td>some item</td>
-            <td><a href="">edit</a></td>
-            <td><a href="" onclick="deleteRow(this)">remove</a></td>
+            <td><span class="edit">edit</span></td>
+            <td><span class="remove">remove</span></td>
         </tr>
         <tr>
             <td>another item</td>
-            <td><a href="">edit</a></td>
-            <td><a href="">remove</a></td>
+            <td><span class="edit">edit</span></td>
+            <td><span class="remove">remove</span></td>
         </tr>
     </tbody>
 </table>
     <div class="addOrEdit">
-            <span>Item value:</span><input type="text" name="inputValue" id="inputValue" placeholder="Enter some text...">
+            Item value:<input type="text" name="inputValue" id="inputValue" placeholder="Enter some text...">
             <div>
                 <button id="buttonAddRow">Save</button>
                 <a href="">&lt;&lt;Go back</a>
