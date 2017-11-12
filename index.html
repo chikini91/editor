@@ -10,7 +10,7 @@
 </head>
 <body>
 <style>
- span, a{
+ .remove, .edit,.goback{
     color: blue;
      text-decoration: underline;
  }
@@ -38,12 +38,12 @@
 <table id="table" border="1" cellspacing="0">
     <tbody>
         <tr>
-            <td>Item name</td>
+            <td><span>Item name</span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>some item</td>
+            <td><span>some item</span></td>
             <td><span class="edit">edit</span></td>
             <td><span class="remove">remove</span></td>
         </tr>
@@ -58,7 +58,7 @@
             Item value:<input type="text" name="inputValue" id="inputValue" placeholder="Enter some text...">
             <div>
                 <button id="buttonAddRow">Save</button>
-                <a href="">&lt;&lt;Go back</a>
+                <span class="goback">&lt;&lt;Go back</span>
             </div>
     </div>
 </body>
